@@ -116,6 +116,16 @@
             bindings = <&to 4>;
             key-positions = <0 9>;
         };
+
+        screen {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <19 10>;
+        };
+
+        ctra {
+            bindings = <&kp LA(LC(DELETE))>;
+            key-positions = <20 29>;
+        };
     };
 
     behaviors {
