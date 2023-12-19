@@ -28,7 +28,7 @@
         combo_3 {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&to 1>;
+            bindings = <&to 2>;
         };
 
         combo_ent {
@@ -40,13 +40,13 @@
         combo_1 {
             timeout-ms = <50>;
             key-positions = <30 33>;
-            bindings = <&to 1>;
+            bindings = <&to 2>;
         };
 
         combo_1_high {
             timeout-ms = <50>;
             key-positions = <24 25>;
-            bindings = <&to 1>;
+            bindings = <&to 2>;
         };
 
         combo_scol {
@@ -152,8 +152,19 @@
 &kp Q  &kp W  &kp F  &kp P                &kp B                     &kp J           &kp L  &kp U                 &kp Y         &ht COLON SEMICOLON
 &kp A  &kp R  &kp S  &kp T                &kp G                     &kp M           &kp N  &kp E                 &kp I         &kp O
 &kp Z  &kp X  &kp C  &kp D                &kp V                     &kp K           &kp H  &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
-                     &mt LS(LG(S)) SPACE  &ht LEFT_CONTROL SPACE    &kp LEFT_SHIFT  &to 1
+                     &mt LS(LG(S)) SPACE  &ht LEFT_CONTROL SPACE    &kp LEFT_SHIFT  &to 2
             >;
+        };
+
+        Symbols {
+            bindings = <
+&kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET         &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &kp BACKSPACE
+&kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp ENTER
+&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
+                                   &to 0              &kp LCTRL      &kp LALT          &to 2
+            >;
+
+            label = "Symbols";
         };
 
         bt {
