@@ -40,13 +40,13 @@
         combo_1 {
             timeout-ms = <50>;
             key-positions = <30 33>;
-            bindings = <&to 3>;
+            bindings = <&to 2>;
         };
 
         combo_1_high {
             timeout-ms = <50>;
             key-positions = <24 25>;
-            bindings = <&to 3>;
+            bindings = <&to 1>;
         };
 
         combo_scol {
@@ -130,6 +130,11 @@
             key-positions = <26 27>;
             bindings = <&mkp LCLK>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <17 18>;
+        };
     };
 
     behaviors {
@@ -185,6 +190,17 @@
 &out OUT_BLE  &out OUT_USB  &bt BT_CLR    &trans        &to 0           &to 0   &trans  &trans  &kp F11  &kp F12
                                           &to 0         &trans          &trans  &to 2
             >;
+        };
+
+        Arrows_mouse {
+            bindings = <
+&ht LA(F4) ESCAPE  &kp K_SCROLL_UP  &trans  &kp K_SCROLL_DOWN  &trans            &trans    &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &kp BSPC
+&kp TAB            &trans           &trans  &trans             &trans            &kp LEFT  &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER
+&trans             &trans           &trans  &trans             &trans            &trans    &trans           &trans        &trans     &trans
+                                            &to 0              &kp LEFT_SHIFT    &kp RALT  &to 2
+            >;
+
+            label = "Arrows_mouse";
         };
     };
 };
