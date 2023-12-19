@@ -158,10 +158,10 @@
 
         Symbols {
             bindings = <
-&kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET         &kp AMPERSAND         &kp ASTERISK           &kp SEMICOLON      &kp BACKSPACE
-&kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &kp ENTER
-&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
-                                   &to 0              &kp LCTRL      &kp LALT          &to 2
+&kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET           &kp AMPERSAND         &kp ASTERISK           &ht COLON SEMI     &kp BACKSPACE
+&kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &ht HOME BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &ht END PIPE       &kp ENTER
+&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
+                                   &to 0              &kp LCTRL      &kp LALT            &to 2
             >;
 
             label = "Symbols";
@@ -174,6 +174,17 @@
 &out OUT_BLE  &out OUT_USB  &bt BT_CLR    &trans        &to 0           &to 0   &trans  &trans  &kp F11  &kp F12
                                           &to 0         &trans          &trans  &to 0
             >;
+        };
+
+        Numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+
+            label = "Numbers";
         };
     };
 };
