@@ -135,6 +135,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <17 18>;
         };
+
+        bt_layer {
+            bindings = <&to 4>;
+            key-positions = <0 9>;
+        };
     };
 
     behaviors {
