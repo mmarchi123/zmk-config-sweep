@@ -28,7 +28,7 @@
         combo_3 {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&to 3>;
+            bindings = <&to 4>;
         };
 
         combo_ent {
@@ -40,13 +40,13 @@
         combo_1 {
             timeout-ms = <50>;
             key-positions = <30 33>;
-            bindings = <&to 2>;
+            bindings = <&to 1>;
         };
 
         combo_1_high {
             timeout-ms = <50>;
             key-positions = <24 25>;
-            bindings = <&to 1>;
+            bindings = <&to 2>;
         };
 
         combo_scol {
@@ -157,19 +157,8 @@
 &kp Q  &kp W  &kp F  &kp P                &kp B                     &kp J           &kp L  &kp U                 &kp Y         &ht COLON SEMICOLON
 &kp A  &kp R  &kp S  &kp T                &kp G                     &kp M           &kp N  &kp E                 &kp I         &kp O
 &kp Z  &kp X  &kp C  &kp D                &kp V                     &kp K           &kp H  &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
-                     &mt LS(LG(S)) SPACE  &ht LEFT_CONTROL SPACE    &kp LEFT_SHIFT  &to 2
+                     &mt LS(LG(S)) SPACE  &ht LEFT_CONTROL SPACE    &kp LEFT_SHIFT  &to 1
             >;
-        };
-
-        Symbols {
-            bindings = <
-&kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET           &kp AMPERSAND         &kp ASTERISK           &ht COLON SEMI     &kp BACKSPACE
-&kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &ht HOME BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &ht END PIPE       &kp ENTER
-&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
-                                   &to 0              &kp LCTRL      &kp LALT            &to 2
-            >;
-
-            label = "Symbols";
         };
 
         Num_Media {
@@ -177,10 +166,32 @@
 &kp ESC  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT       &kp UNDERSCORE    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp BSPC
 &kp TAB  &trans            &kp C_VOL_DN    &kp C_VOLUME_UP  &kp PLUS          &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp ENTER
 &trans   &kp ASTRK         &trans          &trans           &kp DOT           &kp N0     &kp N1  &kp N2  &kp N3  &to 3
-                                           &to 0            &kp LCTRL         &kp RALT   &to 1
+                                           &to 0            &kp LCTRL         &kp RALT   &to 2
             >;
 
             label = "Num_Media";
+        };
+
+        Symbols {
+            bindings = <
+&kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET           &kp AMPERSAND         &kp ASTERISK           &ht COLON SEMI     &kp BACKSPACE
+&kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &ht HOME BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &ht END PIPE       &kp ENTER
+&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
+                                   &to 0              &kp LCTRL      &kp LALT            &to 1
+            >;
+
+            label = "Symbols";
+        };
+
+        Arrows_mouse {
+            bindings = <
+&ht LA(F4) ESCAPE  &kp K_SCROLL_UP  &trans  &kp K_SCROLL_DOWN  &trans            &trans    &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &kp BSPC
+&kp TAB            &trans           &trans  &trans             &trans            &kp LEFT  &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER
+&trans             &trans           &trans  &trans             &to 4             &trans    &trans           &trans        &trans     &trans
+                                            &to 0              &kp LEFT_SHIFT    &kp RALT  &to 1
+            >;
+
+            label = "Arrows_mouse";
         };
 
         bt {
@@ -188,19 +199,8 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1  &kp F2  &kp F3  &kp F4   &kp F5
 &bootloader   &trans        &trans        &trans        &trans          &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
 &out OUT_BLE  &out OUT_USB  &bt BT_CLR    &trans        &to 0           &to 0   &trans  &trans  &kp F11  &kp F12
-                                          &to 0         &trans          &trans  &to 2
+                                          &to 0         &trans          &trans  &to 1
             >;
-        };
-
-        Arrows_mouse {
-            bindings = <
-&ht LA(F4) ESCAPE  &kp K_SCROLL_UP  &trans  &kp K_SCROLL_DOWN  &trans            &trans    &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &kp BSPC
-&kp TAB            &trans           &trans  &trans             &trans            &kp LEFT  &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER
-&trans             &trans           &trans  &trans             &trans            &trans    &trans           &trans        &trans     &trans
-                                            &to 0              &kp LEFT_SHIFT    &kp RALT  &to 2
-            >;
-
-            label = "Arrows_mouse";
         };
     };
 };
