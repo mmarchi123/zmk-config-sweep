@@ -63,13 +63,6 @@
             layers = <5>;
         };
 
-        combo_minus {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp MINUS>;
-            layers = <0 5>;
-        };
-
         combo_slsh {
             timeout-ms = <50>;
             key-positions = <28 29>;
@@ -134,13 +127,18 @@
         };
 
         equal {
-            bindings = <&kp KP_EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <14 15>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <24 25>;
+        };
+
+        word_caps {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
         };
     };
 
@@ -153,15 +151,6 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-
-        morph_a_tab: morph_a_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORPH_A_TAB";
-            bindings = <&kp A>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
         };
 
         morphQtab: morphQtab {
