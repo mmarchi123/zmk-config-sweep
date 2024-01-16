@@ -40,7 +40,7 @@
         combo_1 {
             timeout-ms = <50>;
             key-positions = <30 33>;
-            bindings = <&to 4>;
+            bindings = <&to 1>;
         };
 
         combo_1_high {
@@ -67,7 +67,7 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp MINUS>;
-            layers = <5>;
+            layers = <0 5>;
         };
 
         combo_slsh {
@@ -87,6 +87,7 @@
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp DQT>;
+            layers = <0 5>;
         };
 
         combo_bslh {
@@ -109,6 +110,7 @@
         bt_layer {
             bindings = <&to 4>;
             key-positions = <0 9>;
+            layers = <0>;
         };
 
         screen {
@@ -116,9 +118,14 @@
             key-positions = <19 10>;
         };
 
-        ctra {
+        ctrlAltDel {
             bindings = <&kp LA(LC(DELETE))>;
             key-positions = <20 29>;
+        };
+
+        Colemak {
+            bindings = <&to 5>;
+            key-positions = <31 32>;
         };
     };
 
@@ -141,6 +148,41 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        morphQtab: morphQtab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPHQTAB";
+            bindings = <&kp Q>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        tapdanceCopy: tapdanceCopy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCECOPY";
+            #binding-cells = <0>;
+            tapping-term-ms = <140>;
+            bindings = <&kp C>, <&kp LC(C)>;
+        };
+
+        tapDancePaste: tapDancePaste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCEPASTE";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp LC(V)>;
+
+            tapping-term-ms = <140>;
+        };
+
+        tapdanceCut: tapdanceCut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCECUT";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&kp LC(X)>;
+
+            tapping-term-ms = <140>;
+        };
     };
 
     keymap {
@@ -148,10 +190,10 @@
 
         Qwerty {
             bindings = <
-&kp Q         &kp W  &kp E  &kp R                &kp T                 &kp Y                 &kp U                &kp I      &kp O    &kp P
-&morph_a_tab  &kp S  &kp D  &kp F                &kp G                 &kp H                 &kp J                &kp K      &kp L    &kp SEMI
-&kp Z         &kp X  &kp C  &kp V                &kp B                 &kp N                 &kp M                &kp COMMA  &kp DOT  &kp FSLH
-                            &ht LEFT_GUI ESCAPE  &ht LEFT_ALT SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL BACKSPACE
+&morphQtab  &kp W  &kp E          &kp R               &kp T                 &kp Y                 &kp U                &kp I      &kp O    &kp P
+&kp A       &kp S  &kp D          &kp F               &kp G                 &kp H                 &kp J                &kp K      &kp L    &kp SEMI
+&kp Z       &kp X  &tapdanceCopy  &kp V               &kp B                 &kp N                 &kp M                &kp COMMA  &kp DOT  &kp FSLH
+                                  &ht LEFT_GUI LCTRL  &ht LEFT_ALT SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL BACKSPACE
             >;
 
             label = "qwerty";
@@ -173,7 +215,7 @@
 &kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET           &kp AMPERSAND         &kp ASTERISK           &ht COLON SEMI     &kp BACKSPACE
 &kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &ht HOME BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &ht END PIPE       &kp ENTER
 &kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
-                                   &to 0              &kp LCTRL      &kp LALT            &to 1
+                                   &to 0              &kp LCTRL      &kp LALT            &to 3
             >;
 
             label = "Symbols";
@@ -201,10 +243,10 @@
 
         Colemak {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P               &kp B                     &kp J           &kp L  &kp U                 &kp Y         &ht COLON SEMICOLON
-&kp A  &kp R  &kp S  &kp T               &kp G                     &kp M           &kp N  &kp E                 &kp I         &kp O
-&kp Z  &kp X  &kp C  &kp D               &kp V                     &kp K           &kp H  &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
-                     &mt LEFT_GUI SPACE  &ht LEFT_CONTROL SPACE    &kp LEFT_SHIFT  &to 0
+&kp Q  &kp W  &kp F  &kp P               &kp B                     &kp J                 &kp L                &kp U                 &kp Y         &ht COLON SEMICOLON
+&kp A  &kp R  &kp S  &kp T               &kp G                     &kp M                 &kp N                &kp E                 &kp I         &kp O
+&kp Z  &kp X  &kp C  &kp D               &kp V                     &kp K                 &kp H                &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
+                     &mt LEFT_GUI SPACE  &ht LEFT_CONTROL SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL BACKSPACE
             >;
         };
     };
