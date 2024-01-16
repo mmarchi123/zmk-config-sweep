@@ -206,8 +206,8 @@
             bindings = <
 &kp ESC    &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET           &kp AMPERSAND         &kp ASTERISK           &ht COLON SEMI     &kp BACKSPACE
 &kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &ht HOME BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &ht END PIPE       &kp ENTER
-&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans
-                                   &to 0              &kp LCTRL      &kp LALT            &to 3
+&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &to 3
+                                   &to 0              &kp LCTRL      &kp LALT            &to 1
             >;
 
             label = "Symbols";
