@@ -152,7 +152,7 @@
             bindings = <&bootloader>;
             key-positions = <8 9>;
             timeout-ms = <50>;
-            layers = <5 0 2 3>;
+            layers = <4>;
         };
     };
 
