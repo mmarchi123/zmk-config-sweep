@@ -43,9 +43,9 @@
             bindings = <&to 1>;
         };
 
-        combo_1_high {
+        symbols {
             timeout-ms = <50>;
-            key-positions = <24 25>;
+            key-positions = <23 26>;
             bindings = <&to 2>;
         };
 
@@ -126,6 +126,21 @@
         Colemak {
             bindings = <&to 5>;
             key-positions = <31 32>;
+        };
+
+        minus {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <4 5>;
+        };
+
+        equal {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <14 15>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <24 25>;
         };
     };
 
