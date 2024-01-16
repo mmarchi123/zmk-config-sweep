@@ -172,32 +172,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
-
-        tapdanceCopy: tapdanceCopy {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCECOPY";
-            #binding-cells = <0>;
-            tapping-term-ms = <140>;
-            bindings = <&kp C>, <&kp LC(C)>;
-        };
-
-        tapDancePaste: tapDancePaste {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCEPASTE";
-            #binding-cells = <0>;
-            bindings = <&kp V>, <&kp LC(V)>;
-
-            tapping-term-ms = <140>;
-        };
-
-        tapdanceCut: tapdanceCut {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCECUT";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&kp LC(X)>;
-
-            tapping-term-ms = <140>;
-        };
     };
 
     keymap {
@@ -205,10 +179,10 @@
 
         Qwerty {
             bindings = <
-&morphQtab  &kp W         &kp E          &kp R               &kp T                 &kp Y                 &kp U                &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D          &kp F               &kp G                 &kp H                 &kp J                &kp K      &kp L    &kp SEMI
-&kp Z       &tapdanceCut  &tapdanceCopy  &tapDancePaste      &kp B                 &kp N                 &kp M                &kp COMMA  &kp DOT  &kp FSLH
-                                         &ht LEFT_GUI LCTRL  &ht LEFT_ALT SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL BACKSPACE
+&morphQtab  &kp W  &kp E  &kp R               &kp T                 &kp Y                 &kp U                &kp I      &kp O    &kp P
+&kp A       &kp S  &kp D  &kp F               &kp G                 &kp H                 &kp J                &kp K      &kp L    &kp SEMI
+&kp Z       &kp X  &kp C  &kp V               &kp B                 &kp N                 &kp M                &kp COMMA  &kp DOT  &kp FSLH
+                          &ht LEFT_GUI LCTRL  &ht LEFT_ALT SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL BACKSPACE
             >;
 
             label = "qwerty";
