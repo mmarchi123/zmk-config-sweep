@@ -184,16 +184,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
-
-        morph_alt_F4: morph_alt_F4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORPH_ALT_F4";
-            bindings = <&kp T>, <&kp F4>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LALT)>;
-            mods = <(MOD_LALT)>;
-        };
     };
 
     keymap {
