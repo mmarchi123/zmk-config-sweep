@@ -185,9 +185,9 @@
             mods = <(MOD_LALT)>;
         };
 
-        new_behavior: new_behavior {
+        morph_T_alt_f4: morph_T_alt_f4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "MORPH_T_ALT_F4";
             bindings = <&kp T>, <&kp LA(F4)>;
 
             #binding-cells = <0>;
