@@ -175,6 +175,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        morph_copy: morph_copy {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MORPH_COPY";
+            bindings = <&kp C>, <&kp LC(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     keymap {
