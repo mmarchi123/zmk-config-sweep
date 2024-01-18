@@ -201,6 +201,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_RCTL)>;
         };
 
         morph_X_cut: morph_X_cut {
