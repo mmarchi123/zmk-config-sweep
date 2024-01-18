@@ -184,6 +184,14 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        tap_C_Copy: tap_C_Copy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_C_COPY";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp C>, <&kp LC(C)>;
+        };
     };
 
     keymap {
