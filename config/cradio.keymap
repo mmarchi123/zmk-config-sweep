@@ -182,7 +182,7 @@
             bindings = <&kp C>, <&kp LC(C)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LGUI)>;
         };
 
         morph_T_alt_f4: morph_T_alt_f4 {
