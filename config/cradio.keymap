@@ -184,6 +184,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        tap_gui_ctrl: tap_gui_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_GUI_CTRL";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp LEFT_GUI>;
+
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -244,10 +253,10 @@
 
         Colemak {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P         &kp B                     &kp J                 &kp L          &kp U                 &kp Y         &ht COLON SEMICOLON
-&kp A  &kp R  &kp S  &kp T         &kp G                     &kp M                 &kp N          &kp E                 &kp I         &kp O
-&kp Z  &kp X  &kp C  &kp D         &kp V                     &kp K                 &kp H          &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
-                     &kp LEFT_GUI  &ht LEFT_CONTROL SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL DEL
+&kp Q  &kp W  &kp F  &kp P          &kp B                     &kp J                 &kp L          &kp U                 &kp Y         &ht COLON SEMICOLON
+&kp A  &kp R  &kp S  &kp T          &kp G                     &kp M                 &kp N          &kp E                 &kp I         &kp O
+&kp Z  &kp X  &kp C  &kp D          &kp V                     &kp K                 &kp H          &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
+                     &tap_gui_ctrl  &ht LEFT_CONTROL SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL DEL
             >;
         };
     };
