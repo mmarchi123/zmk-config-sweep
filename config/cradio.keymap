@@ -184,30 +184,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
-
-        tap_C_Copy: tap_C_Copy {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_C_COPY";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp C>, <&kp LC(C)>;
-        };
-
-        tap_x_cut: tap_x_cut {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_X_CUT";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp X>, <&kp LC(X)>;
-        };
-
-        tap_V_paste: tap_V_paste {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_V_PASTE";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp V>, <&kp LC(V)>;
-        };
     };
 
     keymap {
