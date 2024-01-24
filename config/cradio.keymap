@@ -49,10 +49,10 @@
             bindings = <&to 2>;
         };
 
-        combo_scol {
+        combo_question {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp SEMI>;
+            bindings = <&kp QUESTION>;
             layers = <5 0 2 3>;
         };
 
@@ -60,7 +60,7 @@
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp COMMA>;
-            layers = <5>;
+            layers = <5 0>;
         };
 
         combo_slsh {
@@ -153,6 +153,11 @@
             key-positions = <8 9>;
             timeout-ms = <50>;
             layers = <4>;
+        };
+
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <0 1>;
         };
     };
 
