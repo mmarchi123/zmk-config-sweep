@@ -194,6 +194,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        t_layer_h_key: t_layer_h_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "T_LAYER_H_KEY";
+            bindings = <&kp>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -201,10 +210,10 @@
 
         Qwerty {
             bindings = <
-&morph_Q_tab  &kp W  &kp E  &kp R         &morph_T_alt_f4       &kp Y                 &kp U             &kp I      &kp O    &kp P
-&kp A         &kp S  &kp D  &kp F         &kp G                 &kp H                 &kp J             &kp K      &kp L    &kp SEMI
-&kp Z         &kp X  &kp C  &kp V         &kp B                 &kp N                 &kp M             &kp COMMA  &kp DOT  &kp FSLH
-                            &kp LEFT_GUI  &ht LEFT_ALT SPACE    &ht LEFT_SHIFT ENTER  &ht LCTRL DELETE
+&morph_Q_tab  &kp W  &kp E           &kp R                     &morph_T_alt_f4       &kp Y                 &kp U                   &kp I           &kp O    &kp P
+&kp A         &kp S  &ht LEFT_ALT D  &ht LEFT_GUI F            &kp G                 &kp H                 &ht LEFT_GUI J          &ht LEFT_ALT K  &kp L    &kp SEMI
+&kp Z         &kp X  &kp C           &kp V                     &kp B                 &kp N                 &kp M                   &kp COMMA       &kp DOT  &kp FSLH
+                                     &ht LA(LS(LCTRL)) DELETE  &ht LEFT_ALT SPACE    &ht LEFT_SHIFT ENTER  &t_layer_h_key LCTRL 1
             >;
 
             label = "qwerty";
