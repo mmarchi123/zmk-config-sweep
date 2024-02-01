@@ -243,10 +243,10 @@
 
         Arrows_mouse {
             bindings = <
-&ht LA(F4) ESCAPE  &kp K_SCROLL_UP  &trans  &kp K_SCROLL_DOWN  &trans            &trans        &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &kp BSPC
-&kp TAB            &trans           &trans  &trans             &trans            &kp LEFT      &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER
-&trans             &trans           &trans  &trans             &none             &trans        &trans           &trans        &trans     &trans
-                                            &to 0              &kp LEFT_SHIFT    &kp LEFT_ALT  &to 1
+&ht LA(F4) ESCAPE  &kp C_AC_SCROLL_UP  &trans  &kp C_AC_SCROLL_DOWN  &trans            &trans        &kp LC(LS(TAB))  &kp LC(TAB)   &trans     &kp BSPC
+&kp TAB            &trans              &trans  &trans                &trans            &kp LEFT      &kp DOWN         &kp UP_ARROW  &kp RIGHT  &kp ENTER
+&trans             &trans              &trans  &trans                &none             &trans        &trans           &trans        &trans     &trans
+                                               &to 0                 &kp LEFT_SHIFT    &kp LEFT_ALT  &to 1
             >;
 
             label = "Arrows_mouse";
