@@ -27,7 +27,7 @@
 
         combo_3 {
             timeout-ms = <50>;
-            key-positions = <5 9>;
+            key-positions = <6 8>;
             bindings = <&to 3>;
         };
 
