@@ -223,8 +223,8 @@
 
         Arrows_mouse {
             bindings = <
-&ht LA(F4) ESCAPE  &kp PAGE_UP  &trans  &kp PAGE_DOWN  &trans    &kp PAGE_UP  &kp LC(LS(TAB))  &kp LC(TAB)   &kp PAGE_DOWN  &kp BSPC
-&kp TAB            &trans       &trans  &trans         &trans    &kp LEFT     &kp DOWN         &kp UP_ARROW  &kp RIGHT      &kp ENTER
+&ht LA(F4) ESCAPE  &kp PAGE_UP  &trans  &kp PAGE_DOWN  &trans    &kp PAGE_UP  &kp LC(LS(TAB))  &kp LC(TAB)   &kp PAGE_DOWN  &kp LS(DELETE)
+&kp TAB            &trans       &trans  &trans         &trans    &kp LEFT     &kp DOWN         &kp UP_ARROW  &kp RIGHT      &kp LC(LEFT_SHIFT)
 &trans             &trans       &trans  &trans         &none     &trans       &trans           &trans        &trans         &trans
                                         &to 0          &trans    &trans       &to 1
             >;
