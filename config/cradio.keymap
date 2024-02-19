@@ -29,10 +29,8 @@
         };
 
         combo_navigation {
-            timeout-ms = <50>;
             key-positions = <6 8>;
             bindings = <&to 2>;
-            layers = <2>;
         };
 
         combo_ent {
@@ -103,6 +101,7 @@
             bindings = <&to 4>;
             key-positions = <31 32>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         minus {
@@ -257,6 +256,8 @@
 &kp Z         &kp X  &kp C           &kp D                 &kp V        &kp K           &kp H                          &ht UNDERSCORE COMMA  &ht EXCL DOT  &ht QUESTION SLASH
                                      &kp LS(LC(LEFT_ALT))  &kp SPACE    &kp LEFT_SHIFT  &t_layer_h_key LEFT_CONTROL 1
             >;
+
+            label = "Colemak";
         };
     };
 };
