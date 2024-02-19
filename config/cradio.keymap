@@ -31,7 +31,7 @@
         combo_navigation {
             timeout-ms = <50>;
             key-positions = <6 8>;
-            bindings = <&to 0>;
+            bindings = <&to 2>;
             layers = <2>;
         };
 
