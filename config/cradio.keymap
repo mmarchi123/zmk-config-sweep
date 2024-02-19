@@ -184,6 +184,15 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        td_semi_caps: td_semi_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SEMI_CAPS";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
