@@ -195,18 +195,6 @@
         };
     };
 
-    macros {
-        unstick_keys: unstick_keys {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RIGHT_GUI>;
-
-            label = "UNSTICK_KEYS";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
