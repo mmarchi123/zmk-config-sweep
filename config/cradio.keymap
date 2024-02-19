@@ -47,7 +47,7 @@
 
         combo_com {
             timeout-ms = <50>;
-            key-positions = <4 3>;
+            key-positions = <3 2>;
             bindings = <&kp COMMA>;
         };
 
