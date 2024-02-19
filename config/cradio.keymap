@@ -201,10 +201,10 @@
 
         Num_Func {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp ASTRK  &kp N7        &kp N8  &kp N9  &kp MINUS
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp SLASH  &kp N4        &kp N5  &kp N6  &kp PLUS
-&kp F11  &kp F12  &trans  &trans  &mo 2      &kp N0     &kp N1        &kp N2  &kp N3  &kp PERIOD
-                          &to 0   &trans     &trans     &kp NUMBER_0
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp ASTRK   &kp N7        &kp N8  &kp N9  &kp MINUS
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp SLASH   &kp N4        &kp N5  &kp N6  &kp PLUS
+&kp F11  &kp F12  &trans  &trans  &mo 2      &kp PERIOD  &kp N1        &kp N2  &kp N3  &kp ENTER
+                          &to 0   &trans     &trans      &kp NUMBER_0
             >;
 
             label = "Num_Func";
@@ -212,10 +212,10 @@
 
         Symbols {
             bindings = <
-&kp EXCL   &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT    &kp CARET           &kp AMPERSAND         &kp ASTERISK           &ht COLON SEMI     &kp BACKSPACE
-&kp TAB    &kp EQUAL    &kp GRAVE  &kp APOS           &kp APOS       &ht HOME BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &ht END PIPE       &kp ENTER
-&kp TILDE  &trans       &trans     &kp DOUBLE_QUOTES  &kp DQT        &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &to 3
-                                   &to 0              &trans         &trans              &to 1
+&kp TILDE              &kp AT_SIGN           &kp HASH               &kp DOLLAR             &kp PERCENT    &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &ht LS(LEFT_ALT) DELETE
+&ht HOME LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht END RIGHT_BRACKET  &kp APOS       &kp PAGE_DOWN  &kp LEFT_ARROW   &kp DOWN      &kp RIGHT    &ht LEFT_ALT BACKSPACE
+&trans                 &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                 &trans         &trans         &trans           &trans        &trans       &kp ENTER
+                                                                    &to 0                  &trans         &trans         &to 1
             >;
 
             label = "Symbols";
