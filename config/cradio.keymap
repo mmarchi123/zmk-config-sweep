@@ -199,7 +199,10 @@
         unstick_keys: unstick_keys {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RIGHT_GUI>;
+            bindings =
+                <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RIGHT_GUI>,
+                <&macro_tap>;
+
             label = "UNSTICK_KEYS";
         };
     };
