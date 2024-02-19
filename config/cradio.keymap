@@ -222,10 +222,10 @@
 
         Navigation_Sym_Media {
             bindings = <
-&kp K_PREVIOUS         &kp K_NEXT            &kp C_VOL_DN           &kp C_VOL_UP           &kp K_PLAY_PAUSE    &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &kp LS(LEFT_ALT)
-&ht HOME LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht END RIGHT_BRACKET  &kp GRAVE           &kp PAGE_DOWN  &kp LEFT_ARROW   &kp DOWN      &kp RIGHT    &kp LEFT_ALT
-&trans                 &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                 &trans              &trans         &trans           &trans        &trans       &kp ENTER
-                                                                    &to 0                  &trans              &trans         &to 1
+&kp C_PREVIOUS         &kp C_NEXT            &kp C_PLAY             &kp C_VOLUME_DOWN      &kp C_VOLUME_UP    &kp PAGE_UP  &ht LS(LEFT_ALT) LC(LS(TAB))  &kp UP_ARROW  &ht LEFT_ALT LC(TAB)  &kp PAGE_DOWN
+&ht HOME LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht END RIGHT_BRACKET  &kp GRAVE          &kp HOME     &kp LEFT_ARROW                &kp DOWN      &kp RIGHT             &ht END LS(DELETE)
+&trans                 &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                 &trans             &trans       &trans                        &trans        &trans                &trans
+                                                                    &to 0                  &trans             &trans       &to 1
             >;
 
             label = "Nav_Sym_Media";
