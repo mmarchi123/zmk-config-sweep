@@ -190,10 +190,10 @@
 
         Qwerty {
             bindings = <
-&morph_Q_tab  &kp W  &kp E           &kp R                     &morph_T_alt_f4         &kp Y                 &kp U                   &kp I           &kp O    &kp P
-&kp A         &kp S  &ht LEFT_ALT D  &ht LEFT_GUI F            &ht LA(LEFT_SHIFT) G    &kp H                 &ht LEFT_GUI J          &ht LEFT_ALT K  &kp L    &kp SEMI
-&kp Z         &kp X  &kp C           &kp V                     &kp B                   &kp N                 &kp M                   &kp COMMA       &kp DOT  &kp FSLH
-                                     &kp LS(LA(LEFT_CONTROL))  &kp SPACE               &ht LEFT_SHIFT ENTER  &t_layer_h_key LCTRL 1
+&morph_Q_tab  &kp W  &kp E           &kp R                     &morph_T_alt_f4         &kp Y           &kp U                   &kp I           &kp O    &kp P
+&kp A         &kp S  &ht LEFT_ALT D  &ht LEFT_GUI F            &ht LA(LEFT_SHIFT) G    &kp H           &ht LEFT_GUI J          &ht LEFT_ALT K  &kp L    &kp SEMI
+&kp Z         &kp X  &kp C           &kp V                     &kp B                   &kp N           &kp M                   &kp COMMA       &kp DOT  &kp FSLH
+                                     &kp LS(LA(LEFT_CONTROL))  &kp SPACE               &kp LEFT_SHIFT  &t_layer_h_key LCTRL 1
             >;
 
             label = "qwerty";
@@ -223,10 +223,10 @@
 
         Arrows_mouse {
             bindings = <
-&ht LA(F4) ESCAPE  &kp PAGE_UP  &trans  &kp PAGE_DOWN  &kp LS(LEFT_ALT)    &kp PAGE_UP  &kp LC(LS(TAB))  &kp LC(TAB)   &kp PAGE_DOWN  &kp LS(DELETE)
-&kp TAB            &trans       &trans  &trans         &kp LEFT_ALT        &kp LEFT     &kp DOWN         &kp UP_ARROW  &kp RIGHT      &kp LEFT_ALT
-&trans             &trans       &trans  &trans         &none               &trans       &trans           &trans        &trans         &kp LS(LEFT_ALT)
-                                        &to 0          &trans              &trans       &to 1
+&ht LA(F4) ESCAPE  &kp PAGE_UP  &trans  &kp PAGE_DOWN  &kp LS(LEFT_ALT)    &kp LC(LS(TAB))  &kp LS(LEFT_ALT)  &kp UP_ARROW  &kp LEFT_ALT  &kp LC(TAB)
+&kp TAB            &trans       &trans  &trans         &kp LEFT_ALT        &trans           &kp LEFT          &kp UP_ARROW  &kp RIGHT     &kp LS(DELETE)
+&trans             &trans       &trans  &trans         &none               &trans           &trans            &trans        &trans        &kp LS(LEFT_ALT)
+                                        &to 0          &trans              &trans           &to 1
             >;
 
             label = "Arrows_mouse";
