@@ -134,7 +134,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <2 1>;
         };
 
         combo_del {
