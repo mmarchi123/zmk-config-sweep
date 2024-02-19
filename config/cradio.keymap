@@ -41,7 +41,7 @@
 
         combo_question {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
             bindings = <&kp QUESTION>;
         };
 
