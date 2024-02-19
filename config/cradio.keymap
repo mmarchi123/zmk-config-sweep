@@ -213,8 +213,8 @@
 
         Navigation_Sym_Media {
             bindings = <
-&kp K_PREVIOUS         &kp K_NEXT            &kp C_VOL_DN           &kp C_VOL_UP           &kp K_PLAY_PAUSE    &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &ht LS(LEFT_ALT) DELETE
-&ht HOME LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht END RIGHT_BRACKET  &kp GRAVE           &kp PAGE_DOWN  &kp LEFT_ARROW   &kp DOWN      &kp RIGHT    &ht LEFT_ALT BACKSPACE
+&kp K_PREVIOUS         &kp K_NEXT            &kp C_VOL_DN           &kp C_VOL_UP           &kp K_PLAY_PAUSE    &kp PAGE_UP    &kp LC(LS(TAB))  &kp UP_ARROW  &kp LC(TAB)  &kp LS(LEFT_ALT)
+&ht HOME LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht END RIGHT_BRACKET  &kp GRAVE           &kp PAGE_DOWN  &kp LEFT_ARROW   &kp DOWN      &kp RIGHT    &kp LEFT_ALT
 &trans                 &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                 &trans              &trans         &trans           &trans        &trans       &kp ENTER
                                                                     &to 0                  &trans              &trans         &to 1
             >;
