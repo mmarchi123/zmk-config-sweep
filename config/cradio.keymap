@@ -202,15 +202,6 @@
         };
     };
 
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp LS(T) &kp Y &kp P &kp E &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp DOT &kp DOT &kp DOT>;
-            label = "NEW_MACRO";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -240,7 +231,7 @@
             bindings = <
 &kp C_PREVIOUS         &kp C_NEXT            &kp C_PLAY_PAUSE       &kp C_VOLUME_DOWN      &kp C_VOLUME_UP    &kp PAGE_UP  &ht LS(LEFT_ALT) LC(LS(TAB))  &kp UP_ARROW  &ht LEFT_ALT LC(TAB)  &kp PAGE_DOWN
 &ht HOME LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht END RIGHT_BRACKET  &kp GRAVE          &kp HOME     &kp LEFT_ARROW                &kp DOWN      &kp RIGHT             &ht END LS(DELETE)
-&trans                 &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                 &trans             &new_macro   &trans                        &trans        &trans                &trans
+&trans                 &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                 &trans             &trans       &trans                        &trans        &trans                &trans
                                                                     &to 0                  &trans             &trans       &to 1
             >;
 
