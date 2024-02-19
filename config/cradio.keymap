@@ -144,6 +144,11 @@
             key-positions = <31 32>;
             layers = <4>;
         };
+
+        unstick_keys {
+            bindings = <&unstick_keys>;
+            key-positions = <10 19>;
+        };
     };
 
     behaviors {
@@ -192,6 +197,15 @@
             bindings = <&kp SEMICOLON>, <&kp CAPSLOCK>;
 
             tapping-term-ms = <100>;
+        };
+    };
+
+    macros {
+        unstick_keys: unstick_keys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp RIGHT_SHIFT &kp LEFT_CONTROL &kp RIGHT_CONTROL &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RIGHT_GUI>;
+            label = "UNSTICK_KEYS";
         };
     };
 
