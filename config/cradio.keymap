@@ -151,6 +151,11 @@
             bindings = <&kp PERIOD>;
             key-positions = <13 14>;
         };
+
+        combo_numbers {
+            bindings = <&to 1>;
+            key-positions = <16 18>;
+        };
     };
 
     behaviors {
@@ -190,6 +195,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
+            quick-tap-ms = <100>;
         };
 
         td_semi_caps: td_semi_caps {
