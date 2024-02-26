@@ -32,6 +32,7 @@
         combo_navigation {
             key-positions = <6 8>;
             bindings = <&to 2>;
+            layers = <0 4 1>;
         };
 
         combo_ent {
@@ -150,12 +151,18 @@
 
         combo_dot {
             bindings = <&kp PERIOD>;
-            key-positions = <13 14>;
+            key-positions = <11 12>;
         };
 
         combo_numbers {
             bindings = <&to 1>;
             key-positions = <16 18>;
+        };
+
+        combo_num_fun {
+            bindings = <&to 2>;
+            key-positions = <6 8>;
+            layers = <0 2 4>;
         };
     };
 
@@ -214,10 +221,10 @@
 
         Qwerty {
             bindings = <
-&morph_Q_tab  &kp W  &kp E           &kp R                     &morph_T_alt_f4         &kp Y           &kp U                   &kp I           &kp O    &kp P
-&kp A         &kp S  &ht LEFT_ALT D  &ht LEFT_GUI F            &ht LA(LEFT_SHIFT) G    &kp H           &ht LEFT_GUI J          &ht LEFT_ALT K  &kp L    &kp SEMI
-&kp Z         &kp X  &kp C           &kp V                     &kp B                   &kp N           &kp M                   &kp COMMA       &kp DOT  &kp FSLH
-                                     &kp LS(LA(LEFT_CONTROL))  &kp SPACE               &kp LEFT_SHIFT  &t_layer_h_key LCTRL 1
+&morph_Q_tab  &kp W               &kp E           &kp R                     &morph_T_alt_f4         &kp Y           &kp U                   &kp I           &kp O    &kp P
+&kp A         &ht LEFT_CONTROL S  &ht LEFT_ALT D  &ht LEFT_GUI F            &ht LA(LEFT_SHIFT) G    &kp H           &ht LEFT_GUI J          &ht LEFT_ALT K  &kp L    &kp SEMI
+&kp Z         &kp X               &kp C           &kp V                     &kp B                   &kp N           &kp M                   &kp COMMA       &kp DOT  &kp FSLH
+                                                  &kp LS(LA(LEFT_CONTROL))  &kp SPACE               &kp LEFT_SHIFT  &t_layer_h_key LCTRL 1
             >;
 
             label = "qwerty";
