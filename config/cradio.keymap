@@ -159,10 +159,9 @@
             key-positions = <16 18>;
         };
 
-        combo_num_fun {
-            bindings = <&to 2>;
-            key-positions = <6 8>;
-            layers = <0 2 4>;
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 4>;
         };
     };
 
