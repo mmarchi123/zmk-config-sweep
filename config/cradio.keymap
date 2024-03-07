@@ -173,11 +173,6 @@
             bindings = <&mkp RCLK>;
             key-positions = <24 23>;
         };
-
-        test_macro {
-            bindings = <&new_macro>;
-            key-positions = <11 10>;
-        };
     };
 
     behaviors {
@@ -279,7 +274,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
 &none         &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
-&out OUT_BLE  &out OUT_USB  &none         &none         &none           &trans  &trans  &trans  &trans  &trans
+&out OUT_BLE  &out OUT_USB  &none         &none         &new_macro      &trans  &trans  &trans  &trans  &trans
                                           &to 0         &trans          &trans  &to 0
             >;
 
