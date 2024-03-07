@@ -163,6 +163,16 @@
             bindings = <&kp GRAVE>;
             key-positions = <3 4>;
         };
+
+        combo_left_clk {
+            bindings = <&mkp LCLK>;
+            key-positions = <13 14>;
+        };
+
+        combo_right_clk {
+            bindings = <&mkp RCLK>;
+            key-positions = <24 23>;
+        };
     };
 
     behaviors {
