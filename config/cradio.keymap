@@ -225,15 +225,6 @@
         };
     };
 
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp T &kp E &kp S &kp T &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G>;
-            label = "NEW_MACRO";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -274,7 +265,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
 &none         &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
-&out OUT_BLE  &out OUT_USB  &none         &none         &new_macro      &trans  &trans  &trans  &trans  &trans
+&out OUT_BLE  &out OUT_USB  &none         &none         &none           &trans  &trans  &trans  &trans  &trans
                                           &to 0         &trans          &trans  &to 0
             >;
 
