@@ -173,6 +173,11 @@
             bindings = <&mkp RCLK>;
             key-positions = <24 23>;
         };
+
+        test_macro {
+            bindings = <&new_macro>;
+            key-positions = <11 10>;
+        };
     };
 
     behaviors {
