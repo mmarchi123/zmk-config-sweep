@@ -229,7 +229,7 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C>;
+            bindings = <&kp C &kp T &kp E &kp S &kp T &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G>;
             label = "NEW_MACRO";
         };
     };
