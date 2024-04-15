@@ -167,7 +167,6 @@
         combo_left_clk {
             bindings = <&mkp LCLK>;
             key-positions = <13 14>;
-            slow-release;
             require-prior-idle-ms = <50>;
             timeout-ms = <50>;
         };
