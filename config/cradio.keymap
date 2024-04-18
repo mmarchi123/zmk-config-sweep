@@ -155,7 +155,7 @@
         };
 
         combo_numbers {
-            bindings = <&to 1>;
+            bindings = <&tog 1>;
             key-positions = <16 18>;
         };
 
