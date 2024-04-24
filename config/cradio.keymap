@@ -31,7 +31,7 @@
 
         combo_navigation {
             key-positions = <6 8>;
-            bindings = <&to 2>;
+            bindings = <&mo 2>;
             layers = <0 4 1>;
         };
 
@@ -155,7 +155,7 @@
         };
 
         combo_numbers {
-            bindings = <&tog 1>;
+            bindings = <&mo 1>;
             key-positions = <16 18>;
         };
 
@@ -173,6 +173,17 @@
         combo_right_clk {
             bindings = <&mkp RCLK>;
             key-positions = <24 23>;
+        };
+
+        combo_numbers2 {
+            bindings = <&mo 1>;
+            key-positions = <13 11>;
+        };
+
+        combo_nav {
+            bindings = <&mo 2>;
+            key-positions = <1 3>;
+            layers = <0 4 1>;
         };
     };
 
